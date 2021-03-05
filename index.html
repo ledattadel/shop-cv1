@@ -13,20 +13,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
     <!-- Custom stylesheet -->
     <link rel="stylesheet" href="./style.css" />
-  
-    <!--  -->
+
+
+    <!-- Glidejs StyleSheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.min.css" />
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
 </head>
 
 <body>
     <!-- Begin: Header -->
     <header class="header">
-        
+
         <div class="nav">
             <div class="nav__logo">
                 <img src="./img/logo.JPG" alt="" />
             </div>
             <ul class="nav__menu">
-                
+
                 <li class="nav__item"><a class='marker' href="">home</a></li>
                 <li class="nav__item"><a class='marker' href="">shop</a> </li>
                 <li class="nav__item"><a class='marker' href="">elements</a></li>
@@ -40,17 +46,90 @@
             </div>
             <div class="nav__icon">
                 <i class="fas fa-search search__mobile"></i>
-                <i class="fas fa-shopping-cart"><div id="cart__total"><span>0</span></div></i>
+                <i class="fas fa-shopping-cart">
+                    <div id="cart__total"><span>0</span></div>
+                </i>
                 <i class="fas fa-bars bar"></i>
             </div>
 
         </div>
     </header>
     <!-- End  : Header -->
+    <!-- Begin: Hero -->
+    <main class="main">
+        <div class="hero">
+            <div class="glide" id="glide1">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <li class="glide__slide">
+                            <img class="slide-img" src="./img/banner_1.png" alt="">
+                            <div class="banner">
+                                <h3 style="color: rgb(80, 80, 80);">New arrivals</h3>
+                                <h2>2021
+                                    <h4>Top trends</h4>
+                                </h2>
+                                <p>Trending from men and women style collection</p>
+                                <a href="#"><button>Shop now</button></a>
+                            </div>
+                        </li>
+                        <li class="glide__slide">
+                            <img class="slide-img" src="./img/banner_2.png" alt="">
+                            <div class="banner">
+                                <h3 style="color: rgb(80, 80, 80);">New arrivals</h3>
+                                <h2>2021
+                                    <h4>Top trends</h4>
+                                </h2>
+                                <p>Trending from men and women style collection</p>
+                                <a href="#"><button>Shop now</button></a>
+                            </div>
+                        </li>
+                        <li class="glide__slide">
+                            <img class="slide-img" src="./img/banner_3.png" alt="">
+                            <div class="banner">
+                                <h3 style="color: rgb(80, 80, 80);">New arrivals</h3>
+                                <h2>2021
+                                    <h4>Top trends</h4>
+                                </h2>
+                                <p>Trending from men and women style collection</p>
+                                <a href="#"><button>Shop now</button></a>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- Arrows -->
+                <div class="glide__arrows" data-glide-el="controls">
+                    <a class="glide__arrow glide__arrow--left" data-glide-dir="<"><i
+                            class="fas fa-chevron-left"></i></a>
+                    <a class="glide__arrow glide__arrow--right" data-glide-dir=">"><i
+                            class="fas fa-chevron-right"></i></a>
+                </div>
+                <!-- BULLTES -->
+                <div class="glide__bullets" data-glide-el="controls[nav]">
+                    <button class="glide__bullet" data-glide-dir="=0"></button>
+                    <button class="glide__bullet" data-glide-dir="=1"></button>
+                    <button class="glide__bullet" data-glide-dir="=2"></button>
+                  </div>
+            </div>
+
+        </div>
+    </main>
+    <!-- End: Hero -->
 
 
-  
-   
+
+
+    <!-- Script -->
+    <!-- End Footer -->
+
+
+    <!-- Glidejs Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
+
+    <!-- Custom Script -->
+    <!-- <script src="./js/product.js"></script> -->
+    <script src="./js/slider.js"></script>
+    <!-- <script src="./js/index.js"></script> -->
 </body>
 
 </html>
